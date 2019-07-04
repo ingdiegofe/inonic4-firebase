@@ -2,8 +2,19 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+// Variables de entorno
+
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+		apiKey: "AIzaSyCTAZHESPDTCrIlH85WgUd7nVwo8mKxMZ4",
+		authDomain: "ionic4-firebase-bdg.firebaseapp.com",
+		databaseURL: "https://ionic4-firebase-bdg.firebaseio.com",
+		projectId: "ionic4-firebase-bdg",
+		storageBucket: "",
+		messagingSenderId: "149230727062",
+		appId: "1:149230727062:web:371e7fea6528cd3f"
+	  }
 };
 
 /*
