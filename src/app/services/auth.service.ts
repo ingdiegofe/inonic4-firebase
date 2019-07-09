@@ -10,7 +10,11 @@ export class AuthService {
 
   public isLogged: any = false;
 
-  constructor(public afAuth: AngularFireAuth) { }
+  constructor(public afAuth: AngularFireAuth) {
+    afAuth.authState.subscribe(user =>{
+      this.isLogged = user;
+    })
+   }
 
   async onLogin(user: User){
     try {
