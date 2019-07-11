@@ -8,6 +8,7 @@ import { User } from '../entity/user.class';
 })
 export class AuthService {
 
+  
   public isLogged: any = false;
 
   constructor(public afAuth: AngularFireAuth) {
